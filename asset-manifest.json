@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/letwalk_cms/static/css/main.5f361e03.chunk.css",
+    "main.js": "/letwalk_cms/static/js/main.22dfb829.chunk.js",
+    "main.js.map": "/letwalk_cms/static/js/main.22dfb829.chunk.js.map",
+    "runtime-main.js": "/letwalk_cms/static/js/runtime-main.57807afc.js",
+    "runtime-main.js.map": "/letwalk_cms/static/js/runtime-main.57807afc.js.map",
+    "static/js/2.ae73902d.chunk.js": "/letwalk_cms/static/js/2.ae73902d.chunk.js",
+    "static/js/2.ae73902d.chunk.js.map": "/letwalk_cms/static/js/2.ae73902d.chunk.js.map",
+    "index.html": "/letwalk_cms/index.html",
+    "precache-manifest.85967e2a0df588e36dc6df8629ce949e.js": "/letwalk_cms/precache-manifest.85967e2a0df588e36dc6df8629ce949e.js",
+    "service-worker.js": "/letwalk_cms/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/letwalk_cms/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.ae73902d.chunk.js.LICENSE.txt": "/letwalk_cms/static/js/2.ae73902d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57807afc.js",
+    "static/js/2.ae73902d.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.22dfb829.chunk.js"
+  ]
+}
