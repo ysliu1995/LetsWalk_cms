@@ -99,9 +99,11 @@ class Notitfication extends React.Component {
 		return (
 			<Grid container spacing={1} justify="center" alignItems="center" >
 				<Grid item xs={2}>
-					<Card>
+					<Card style = {{width: 200,
+								height: 600,
+								overflow: 'auto',}}>
 						<CardHeader 
-							title = "Not choosed"
+							title = "尚未選擇"
 						/>
 						{this.state.left.map((index) => (
 							<List>
@@ -140,9 +142,11 @@ class Notitfication extends React.Component {
 					</Grid>
 				</Grid>
 				<Grid item xs={2}>
-					<Card>
+					<Card style = {{width: 200,
+								height: 600,
+								overflow: 'auto',}}>
 						<CardHeader 
-							title = "chosen"
+							title = "已選擇"
 						/>
 						{this.state.right.map((index) => (
 							<List>
@@ -162,6 +166,7 @@ class Notitfication extends React.Component {
 				<Grid item xs={5}>
 					<div align="center">
 						<TextField
+							style={{ width:400}}
 							multiline
 							rows="10"
 							variant="outlined"

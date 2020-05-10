@@ -16,6 +16,7 @@ import SendIcon from '@material-ui/icons/Send';
 
 import UserList from './UserList'
 import TeamList from './TeamList'
+import TeamInfo from './TeamInfo'
 import Notification from './Notification'
 
 import { HashRouter, Route, Link } from 'react-router-dom';
@@ -28,6 +29,7 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    backgroundColor: "#37ABA2",
   },
   drawer: {
     width: drawerWidth,
@@ -75,16 +77,16 @@ export default function ClippedDrawer() {
       >
         <div className={classes.toolbar} />
         <List>
-            <ListItem
+            {/* <ListItem
                 button
                 selected={selectedIndex === 0}
                 onClick={event => handleListItemClick(event, 0)}
                 component={Link} to={'/'}
             >
             <ListItemIcon><AccountCircleIcon/></ListItemIcon>
-            <ListItemText>Users List</ListItemText>
+            <ListItemText>使用者列表</ListItemText>
             </ListItem>
-            <Divider/>
+            <Divider/> */}
             <ListItem
                 button
                 selected={selectedIndex === 1}
@@ -92,18 +94,18 @@ export default function ClippedDrawer() {
                 component={Link} to={'/teamlist'}
             >
               <ListItemIcon><PeopleIcon/></ListItemIcon>
-              <ListItemText>Team List</ListItemText>
+              <ListItemText>組隊列表</ListItemText>
             </ListItem>
             <Divider/>
-            <ListItem
+            {/* <ListItem
                 button
                 selected={selectedIndex === 2}
                 onClick={event => handleListItemClick(event, 2)}
                 component={Link} to={'/notification'}
             >
               <ListItemIcon><SendIcon/></ListItemIcon>
-              <ListItemText>Send Notification</ListItemText>
-            </ListItem>
+              <ListItemText>發送通知</ListItemText>
+            </ListItem> */}
             <Divider/>
         </List>
       </Drawer>
@@ -112,8 +114,9 @@ export default function ClippedDrawer() {
         <div className={classes.toolbar} />
             
             <div>
-                <Route exact path="/" component={ UserList } />
+                <Route exact path="/" component={ TeamList } />
                 <Route path="/teamlist" component={ TeamList } />
+                <Route path="/teaminfo" component={ TeamInfo } />
                 <Route path="/notification" component={ Notification } />
             </div>
             

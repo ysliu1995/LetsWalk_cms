@@ -6,22 +6,41 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-
+import Backdrop from '@material-ui/core/Backdrop';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 class UserList extends React.Component {
 	state = {
-		userinfo: []
+		userinfo: [],
+		open: false,
 	}
 
 	componentDidMount() {
+		this.setState({
+			open: true,
+		});
         fetch('https://us-central1-letswalk-c0e21.cloudfunctions.net/GetAllUserInfo')
         .then(res => res.json())
         .then((data) => {
 			  this.setState({ userinfo: JSON.parse(data) })
 			  console.log(this.state.userinfo)
+			  this.setState({
+				open: false,
+			});
         })
         .catch(console.log)
 	}
+
+	handleClose = () => {
+		this.setState({
+			open: false,
+		});
+	};
+	handleToggle = () => {
+		this.setState({
+			open: true,
+		});
+	};
 
 	render () {
 		let data = [];
@@ -33,11 +52,10 @@ class UserList extends React.Component {
 						<Paper>
 							<List>
 								<ListItem>
-									<ListItemAvatar>
-										<Avatar/>
-									</ListItemAvatar>
 									<ListItemText>
-										{ this.state.userinfo.userinfo[i].name } ({this.state.userinfo.userinfo[i].age}) { this.state.userinfo.userinfo[i].partner !== 0 ? "有組隊": "尚未組隊"}
+										{ this.state.userinfo.userinfo[i].name } ({this.state.userinfo.userinfo[i].age}) 
+										<p></p>
+										{ this.state.userinfo.userinfo[i].partner !== 0 ? "有組隊": "尚未組隊"}
 									</ListItemText>
 								</ListItem>
 							</List>
@@ -49,9 +67,12 @@ class UserList extends React.Component {
         
 		return (
 			<div>
-				<Grid container spacing={1}>
+				<Grid container spacing={2}>
 					{ data }
 				</Grid>
+				<Backdrop style={{ color: '#fff',}} open={this.state.open}>
+					<CircularProgress color="inherit" />
+				</Backdrop>
 			</div>
 		);
 	}
