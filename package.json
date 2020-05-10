@@ -1,6 +1,6 @@
 {
   "name": "letwalk_cms",
-  "homepage": "https://ysliu1995.github.io/LetWalk_cms",
+  "homepage": "https://ysliu1995.github.io/LetsWalk_cms",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3003",
