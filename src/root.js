@@ -63,7 +63,7 @@ export default function ClippedDrawer() {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" noWrap>
-            LetsWalk CMS
+            Walking Talking CMS
           </Typography>
         </Toolbar>
       </AppBar>
