@@ -281,15 +281,15 @@ class TeamInfo extends React.Component {
 		for(let i=0;i<this.state.message.length;i++){
 			if(this.state.message[i].sender === "admin") {
 				if(this.state.message[i].kind === "photo"){
-					f2 += this.state.messageDate[i] + ", admin," + "https://firebasestorage.googleapis.com/v0/b/letswalk-c0e21.appspot.com/o/"+this.state.message[i].message+"?alt=media&token=3b51c748-a011-4403-87f8-8ed3e5db0149" + "\r\n";
+					f2 += this.state.messageDate[i] + ", Mini Steps," + "https://firebasestorage.googleapis.com/v0/b/letswalk-c0e21.appspot.com/o/"+this.state.message[i].content+"?alt=media&token=3b51c748-a011-4403-87f8-8ed3e5db0149" + "\r\n";
 				} else{
-					f2 += this.state.messageDate[i] + ", admin," + this.state.message[i].message + "\r\n";
+					f2 += this.state.messageDate[i] + ", Mini Steps," + this.state.message[i].content + "\r\n";
 				}
 			} else {
 				if(this.state.message[i].kind === "photo"){
-					f2 += this.state.messageDate[i] + ", " + this.state.userInfo[this.state.message[i].sender] + ", " + "https://firebasestorage.googleapis.com/v0/b/letswalk-c0e21.appspot.com/o/"+this.state.message[i].message+"?alt=media&token=3b51c748-a011-4403-87f8-8ed3e5db0149" + "\r\n";
+					f2 += this.state.messageDate[i] + ", " + this.state.userInfo[this.state.message[i].sender] + ", " + "https://firebasestorage.googleapis.com/v0/b/letswalk-c0e21.appspot.com/o/"+this.state.message[i].content+"?alt=media&token=3b51c748-a011-4403-87f8-8ed3e5db0149" + "\r\n";
 				} else{
-					f2 += this.state.messageDate[i] + ", " + this.state.userInfo[this.state.message[i].sender] + "," + this.state.message[i].message + "\r\n";
+					f2 += this.state.messageDate[i] + ", " + this.state.userInfo[this.state.message[i].sender] + "," + this.state.message[i].content + "\r\n";
 				}
 				
 			}
@@ -362,7 +362,7 @@ class TeamInfo extends React.Component {
 													<Grid item xs={6}>
 														{ this.state.message[index].sender === "admin" && 
 															<Grid item xs={6}>
-																admin <img src={"https://firebasestorage.googleapis.com/v0/b/letswalk-c0e21.appspot.com/o/"+this.state.message[index].content+".jpg?alt=media&token=3b51c748-a011-4403-87f8-8ed3e5db0149"} width="200" height="200"></img>
+																Mini Steps <img src={"https://firebasestorage.googleapis.com/v0/b/letswalk-c0e21.appspot.com/o/"+this.state.message[index].content+".jpg?alt=media&token=3b51c748-a011-4403-87f8-8ed3e5db0149"} width="200" height="200"></img>
 															</Grid>
 														}
 														{ this.state.message[index].sender !== "admin" && 
@@ -383,7 +383,7 @@ class TeamInfo extends React.Component {
 													<Grid item xs={6}>
 														{ this.state.message[index].sender === "admin" && 
 															<Grid item xs={6}>
-																admin : { this.state.message[index].content }
+																Mini Steps : { this.state.message[index].content }
 															</Grid>
 														}
 														{ this.state.message[index].sender !== "admin" && 
