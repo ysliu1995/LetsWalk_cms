@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b91a289d522b75c3471a4c800908567d",
+    "revision": "7caf6a631eb7dfd1cc9680d1342f1277",
     "url": "/LetsWalk_cms/index.html"
   },
   {
-    "revision": "da43dd860275122e2c0c",
+    "revision": "d6c797bf9240b72a7ac0",
     "url": "/LetsWalk_cms/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/LetsWalk_cms/static/js/2.4ae38161.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "da43dd860275122e2c0c",
-    "url": "/LetsWalk_cms/static/js/main.57cb2ecb.chunk.js"
+    "revision": "d6c797bf9240b72a7ac0",
+    "url": "/LetsWalk_cms/static/js/main.10c827e2.chunk.js"
   },
   {
     "revision": "1bb77e25572a67ae7b31",
