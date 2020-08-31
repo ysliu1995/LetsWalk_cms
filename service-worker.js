@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/LetsWalk_cms/precache-manifest.43577cf7008344b5cfc3eeb9563ae374.js"
+  "/LetsWalk_cms/precache-manifest.d81c416ba47ba420792835502dd32f73.js"
 );
 
 self.addEventListener('message', (event) => {
