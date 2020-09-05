@@ -270,7 +270,8 @@ class TeamInfo extends React.Component {
 		console.log('儲存步數資訊');
 		const element1 = document.createElement("a");
 		const file1 = new Blob([f1]);
-		element1.href = URL.createObjectURL(file1);
+		// element1.href = URL.createObjectURL(file1);
+		element1.setAttribute("href", "data:text/csv;charset=utf-8,%EF%BB%BF" + encodeURI(f1));
 		element1.download = "step(" + this.state.userInfo[this.state.user1] + "-" + this.state.userInfo[this.state.user2] + ").csv";
 		document.body.appendChild(element1); 
 		element1.click();
@@ -299,7 +300,8 @@ class TeamInfo extends React.Component {
 		console.log('儲存聊天室內容');
 		const element2 = document.createElement("a");
 		const file2 = new Blob([f2]);
-		element2.href = URL.createObjectURL(file2);
+		// element2.href = URL.createObjectURL(file2);
+		element2.setAttribute("href", "data:text/csv;charset=utf-8,%EF%BB%BF" + encodeURI(f2));
 		element2.download = "chat(" + this.state.userInfo[this.state.user1] + "-" + this.state.userInfo[this.state.user2] + ").csv";
 		document.body.appendChild(element2); 
 		element2.click();
@@ -409,7 +411,7 @@ class TeamInfo extends React.Component {
 							<PhotoIcon />
 						</Fab>
 						<Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
-							<DialogTitle id="form-dialog-title">Let's Walk</DialogTitle>
+							<DialogTitle id="form-dialog-title">Ｗalking Talking</DialogTitle>
 							<DialogContent>
 							<DialogContentText>
 								傳送訊息至聊天室
@@ -433,7 +435,7 @@ class TeamInfo extends React.Component {
 							</DialogActions>
 						</Dialog>
 						<Dialog open={this.state.photo}  aria-labelledby="form-dialog-title">
-							<DialogTitle id="form-dialog-title">Let's Walk</DialogTitle>
+							<DialogTitle id="form-dialog-title">Ｗalking Talking</DialogTitle>
 							<DialogContent>
 							<DialogContentText>
 								傳送照片至聊天室

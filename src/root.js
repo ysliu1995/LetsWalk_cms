@@ -77,7 +77,7 @@ export default function ClippedDrawer() {
       >
         <div className={classes.toolbar} />
         <List>
-            {/* <ListItem
+            <ListItem
                 button
                 selected={selectedIndex === 0}
                 onClick={event => handleListItemClick(event, 0)}
@@ -86,7 +86,7 @@ export default function ClippedDrawer() {
             <ListItemIcon><AccountCircleIcon/></ListItemIcon>
             <ListItemText>使用者列表</ListItemText>
             </ListItem>
-            <Divider/> */}
+            <Divider/>
             <ListItem
                 button
                 selected={selectedIndex === 1}
@@ -114,7 +114,8 @@ export default function ClippedDrawer() {
         <div className={classes.toolbar} />
             
             <div>
-                <Route exact path="/" component={ TeamList } />
+                <Route exact path="/" component={ UserList } />
+                <Route path="/userlist" component={ UserList } />
                 <Route path="/teamlist" component={ TeamList } />
                 <Route path="/teaminfo" component={ TeamInfo } />
                 <Route path="/notification" component={ Notification } />
