@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/LetsWalk_cms/static/css/main.5f361e03.chunk.css",
-    "main.js": "/LetsWalk_cms/static/js/main.b4a53025.chunk.js",
-    "main.js.map": "/LetsWalk_cms/static/js/main.b4a53025.chunk.js.map",
+    "main.js": "/LetsWalk_cms/static/js/main.b278cdbb.chunk.js",
+    "main.js.map": "/LetsWalk_cms/static/js/main.b278cdbb.chunk.js.map",
     "runtime-main.js": "/LetsWalk_cms/static/js/runtime-main.83efe362.js",
     "runtime-main.js.map": "/LetsWalk_cms/static/js/runtime-main.83efe362.js.map",
     "static/js/2.4ae38161.chunk.js": "/LetsWalk_cms/static/js/2.4ae38161.chunk.js",
     "static/js/2.4ae38161.chunk.js.map": "/LetsWalk_cms/static/js/2.4ae38161.chunk.js.map",
     "index.html": "/LetsWalk_cms/index.html",
-    "precache-manifest.70c8288cbc027a7a2d7f69ce2063485d.js": "/LetsWalk_cms/precache-manifest.70c8288cbc027a7a2d7f69ce2063485d.js",
+    "precache-manifest.a2015c11a4f389049c28ef5c79031fce.js": "/LetsWalk_cms/precache-manifest.a2015c11a4f389049c28ef5c79031fce.js",
     "service-worker.js": "/LetsWalk_cms/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/LetsWalk_cms/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.4ae38161.chunk.js.LICENSE.txt": "/LetsWalk_cms/static/js/2.4ae38161.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.83efe362.js",
     "static/js/2.4ae38161.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.b4a53025.chunk.js"
+    "static/js/main.b278cdbb.chunk.js"
   ]
 }
